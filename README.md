@@ -1,1 +1,1 @@
-# https://nicholas-the-pro-coder.github.io/project/
+# https://nicholas-the-pro-coder.github.io/blog-project/
