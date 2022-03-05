@@ -2,7 +2,9 @@ body{
 }
 
 .date{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arapey', serif;
+    font-weight: bold;
+    font-size:18px !important;
 }
 
 .postli{
@@ -47,6 +49,8 @@ a {
 .home-heading {
     overflow: hidden;
     text-align: center;
+    margin-bottom:70px !important;
+    margin-top:25px !important;
   }
   
 .home-heading:before,
@@ -61,16 +65,28 @@ width: 50%;
 }
 
 .home-heading:before {
-right: 0.5em;
+right: 2em;
 margin-left: -50%;
 }
 
 .home-heading:after {
-left: 0.5em;
+left: 2em;
 margin-right: -50%;   
 }
 
 .post-desc {
-    font-size:15px !important;
+    font-size:20px !important;
     color:black;
+}
+
+.posttitle{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.home-heading {
+    
+  }
+  
+.post-desc {
+    font-family: 'Titillium Web', sans-serif;
 }
