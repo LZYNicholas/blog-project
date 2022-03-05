@@ -49,23 +49,28 @@ a {
     text-align: center;
   }
   
-  .home-heading:before,
-  .home-heading:after {
-    background-color: #000;
-    content: "";
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    vertical-align: middle;
-    width: 50%;
-  }
-  
-  .home-heading:before {
-    right: 0.5em;
-    margin-left: -50%;
-  }
-  
-  .home-heading:after {
-    left: 0.5em;
-    margin-right: -50%;   
-  }
+.home-heading:before,
+.home-heading:after {
+background-color: #000;
+content: "";
+display: inline-block;
+height: 1px;
+position: relative;
+vertical-align: middle;
+width: 50%;
+}
+
+.home-heading:before {
+right: 0.5em;
+margin-left: -50%;
+}
+
+.home-heading:after {
+left: 0.5em;
+margin-right: -50%;   
+}
+
+.post-desc {
+    font-size:15px !important;
+    color:black;
+}

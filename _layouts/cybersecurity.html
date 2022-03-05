@@ -1,15 +1,17 @@
 ---
 layout: default
 ---
-
+<head>
+    <link rel="stylesheet" href="{{site.baseurl}}/css/cybersecurity.css">
+</head>
 <div class="home">
 
   {{ content }}
 
-  {%- if site.categories.others.size > 0 -%}
-    <h2 class="post-list-heading home-heading">{{ page.list_title | default: "Other Posts" }}</h2>
+  {%- if site.categories.cybersecurity.size > 0 -%}
+    <h2 class="post-list-heading home-heading">{{ page.list_title | default: "Cybersecurity Posts" }}</h2>
     <ul class="post-list">
-      {%- for post in site.categories.others -%}
+      {%- for post in site.categories.cybersecurity -%}
       <a class="post-link a-post" href="{{ post.url | relative_url }}">
       <li class="postli">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
@@ -17,6 +19,11 @@ layout: default
         <h3 class="posttitle">
             {{ post.title | escape }}
         </h3>
+        {%- if post.description -%}
+        <p class="post-desc">
+            {{post.description}}
+        </p>
+        {%- endif -%}
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
         {%- endif -%}
