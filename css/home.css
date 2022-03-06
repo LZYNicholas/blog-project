@@ -90,3 +90,8 @@ margin-right: -50%;
 .post-desc {
     font-family: 'Titillium Web', sans-serif;
 }
+
+.writtenby{
+    font-family: 'Tangerine', cursive;
+    font-size:30px;
+}

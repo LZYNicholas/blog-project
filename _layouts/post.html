@@ -5,12 +5,16 @@ layout: default
 
   <header class="post-header" style="text-align:center">
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-desc">
+      {{page.description}}
+    </p>
     <p class="post-meta">
       <span class="date">Published on</span>
       <time class="dt-published date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
       </time>
+      <span class="date">Written By Nicholas Low</span>
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
       {%- endif -%}</p>
